@@ -1,16 +1,280 @@
 <!doctype html>
 <html lang="id">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bengkel Komponen | Blog Teknik Komputer</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bengkel Komponen | Blog Teknik Komputer</title>
+
+    <!-- Google AdSense -->
+    <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1979333216692080"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="index.html">Bengkel Komponen</a><nav class="nav"><a href="#artikel">Artikel</a><a href="komponen.html">Komponen</a><a href="#tentang">Tentang</a></nav></div></header>
-<main>
-<section class="hero"><div class="wrap"><span class="eyebrow">Blog teknik komputer</span><h1>Belajar IoT dan embedded system dari komponen nyata.</h1><p>Panduan singkat untuk memahami sensor, mikrokontroler, komunikasi data, dan cara memilih komponen untuk proyek elektronik.</p><div class="actions"><a class="btn main" href="#artikel">Jelajahi artikel</a><a class="btn ghost" href="komponen.html">Lihat katalog komponen</a></div></div></section>
-<section class="section" id="artikel"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Bacaan pilihan</span><h2>Mulai dari konsepnya</h2></div><p>Artikel dibuat bertahap agar mudah dipakai sebagai referensi tugas, praktikum, atau rancangan proyek sederhana.</p></div><div class="grid">
-<article class="card"><div class="visual iot"><span class="chip">IoT / 01</span></div><div class="card-body"><span class="tag">Internet of Things</span><h3>Apa itu IoT dan bagaimana aliran datanya?</h3><p>Mengenal sensor, jaringan, cloud, dan aktuator melalui contoh penyiram tanaman otomatis.</p><a class="link" href="artikel-iot.html">Baca artikel <span class="link-icon" aria-hidden="true">↗</span></a></div></article>
-<article class="card"><div class="visual embedded"><span class="chip">MCU / 02</span></div><div class="card-body"><span class="tag">Embedded system</span><h3>Mikrokontroler sebagai otak perangkat</h3><p>Memahami perbedaan mikrokontroler dan komputer, input-output, memori, serta pemilihan board.</p><a class="link" href="artikel-embedded-system.html">Baca artikel <span class="link-icon" aria-hidden="true">↗</span></a></div></article>
-<article class="card"><div class="visual"><span class="chip">PARTS / 03</span></div><div class="card-body"><span class="tag">Komponen</span><h3>Kit awal untuk mulai bereksperimen</h3><p>Temukan sensor, board, aktuator, dan modul relay lengkap dengan spesifikasi dan link pembelian.</p><a class="link" href="komponen.html">Buka katalog <span class="link-icon" aria-hidden="true">↗</span></a></div></article>
-</div></div></section>
-<section class="section"><div class="wrap split"><div class="panel"><span class="eyebrow">Peta belajar</span><h2>Dari ide menjadi prototipe</h2><p>Gunakan urutan ini saat merancang alat: tentukan data yang ingin dibaca, pilih pengolahnya, lalu tentukan aksi yang akan dilakukan.</p><div class="steps"><div class="step"><span class="number">1</span><div><h3>Input</h3><p>Sensor mengubah kondisi lingkungan menjadi sinyal.</p></div></div><div class="step"><span class="number">2</span><div><h3>Proses</h3><p>Mikrokontroler menjalankan program dan mengambil keputusan.</p></div></div><div class="step"><span class="number">3</span><div><h3>Output</h3><p>Aktuator menjalankan aksi seperti menyalakan motor atau lampu.</p></div></div></div></div><div class="panel"><span class="eyebrow">Butuh komponen?</span><h2>Belanja sambil belajar</h2><p>Setiap komponen di katalog memiliki perkiraan harga dan tombol pencarian marketplace. Harga dapat berubah, jadi periksa kembali sebelum membeli.</p><a class="btn buy" href="komponen.html">Buka katalog belanja</a></div></div></section>
-<section class="section" id="tentang"><div class="wrap"><span class="eyebrow">Tentang</span><h2>Catatan belajar yang praktis</h2><p>Blog ini dibuat untuk pengenalan teknik komputer dan proyek embedded system. Materi disusun ringkas dengan bahasa yang mudah dipahami pemula.</p></div></section>
-</main><footer class="footer"><div class="wrap">Bengkel Komponen · Blog belajar IoT dan teknik komputer</div></footer>
-</body></html>
+
+    <header class="top">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                Bengkel Komponen
+            </a>
+
+            <nav class="nav">
+                <a href="#artikel">Artikel</a>
+                <a href="komponen.html">Komponen</a>
+                <a href="#tentang">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="wrap">
+                <span class="eyebrow">
+                    Blog teknik komputer
+                </span>
+
+                <h1>
+                    Belajar IoT dan embedded system dari komponen nyata.
+                </h1>
+
+                <p>
+                    Panduan singkat untuk memahami sensor, mikrokontroler,
+                    komunikasi data, dan cara memilih komponen untuk proyek elektronik.
+                </p>
+
+                <div class="actions">
+                    <a class="btn main" href="#artikel">
+                        Jelajahi artikel
+                    </a>
+
+                    <a class="btn ghost" href="komponen.html">
+                        Lihat katalog komponen
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artikel -->
+        <section class="section" id="artikel">
+            <div class="wrap">
+
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">
+                            Bacaan pilihan
+                        </span>
+
+                        <h2>
+                            Mulai dari konsepnya
+                        </h2>
+                    </div>
+
+                    <p>
+                        Artikel dibuat bertahap agar mudah dipakai sebagai referensi
+                        tugas, praktikum, atau rancangan proyek sederhana.
+                    </p>
+                </div>
+
+                <div class="grid">
+
+                    <!-- Artikel IoT -->
+                    <article class="card">
+                        <div class="visual iot">
+                            <span class="chip">
+                                IoT / 01
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <span class="tag">
+                                Internet of Things
+                            </span>
+
+                            <h3>
+                                Apa itu IoT dan bagaimana aliran datanya?
+                            </h3>
+
+                            <p>
+                                Mengenal sensor, jaringan, cloud, dan aktuator
+                                melalui contoh penyiram tanaman otomatis.
+                            </p>
+
+                            <a class="link" href="artikel-iot.html">
+                                Baca artikel
+                                <span class="link-icon" aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel Embedded System -->
+                    <article class="card">
+                        <div class="visual embedded">
+                            <span class="chip">
+                                MCU / 02
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <span class="tag">
+                                Embedded system
+                            </span>
+
+                            <h3>
+                                Mikrokontroler sebagai otak perangkat
+                            </h3>
+
+                            <p>
+                                Memahami perbedaan mikrokontroler dan komputer,
+                                input-output, memori, serta pemilihan board.
+                            </p>
+
+                            <a class="link" href="artikel-embedded-system.html">
+                                Baca artikel
+                                <span class="link-icon" aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Katalog Komponen -->
+                    <article class="card">
+                        <div class="visual">
+                            <span class="chip">
+                                PARTS / 03
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <span class="tag">
+                                Komponen
+                            </span>
+
+                            <h3>
+                                Kit awal untuk mulai bereksperimen
+                            </h3>
+
+                            <p>
+                                Temukan sensor, board, aktuator, dan modul relay
+                                lengkap dengan spesifikasi dan link pembelian.
+                            </p>
+
+                            <a class="link" href="komponen.html">
+                                Buka katalog
+                                <span class="link-icon" aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Peta Belajar -->
+        <section class="section">
+            <div class="wrap split">
+
+                <div class="panel">
+                    <span class="eyebrow">
+                        Peta belajar
+                    </span>
+
+                    <h2>
+                        Dari ide menjadi prototipe
+                    </h2>
+
+                    <p>
+                        Gunakan urutan ini saat merancang alat: tentukan data
+                        yang ingin dibaca, pilih pengolahnya, lalu tentukan aksi
+                        yang akan dilakukan.
+                    </p>
+
+                    <div class="steps">
+
+                        <div class="step">
+                            <span class="number">1</span>
+
+                            <div>
+                                <h3>Input</h3>
+
+                                <p>
+                                    Sensor mengubah kondisi lingkungan menjadi sinyal.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="number">2</span>
+
+                            <div>
+                                <h3>Proses</h3>
+
+                                <p>
+                                    Mikrokontroler menjalankan program dan mengambil keputusan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="number">3</span>
+
+                            <div>
+                                <h3>Output</h3>
+
+                                <p>
+                                    Aktuator menjalankan aksi seperti menyalakan motor atau lampu.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <span class="eyebrow">
+                        Butuh komponen?
+                    </span>
+
+                    <h2>
+                        Belanja sambil belajar
+                    </h2>
+
+                    <p>
+                        Setiap komponen di katalog memiliki perkiraan harga
+                        dan tombol pencarian marketplace. Harga dapat berubah,
+                        jadi periksa kembali sebelum membeli.
+                    </p>
+
+                    <a class="btn buy" href="komponen.html">
+                        Buka katalog belanja
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tentang -->
+        <section class="section" id="tentang">
+            <div class="wrap">
+
+                <span class="eyebrow">
+                    Tentang
+                </span>
+
+                <h2>
+                    Catatan
