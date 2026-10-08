@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mengenal Embedded System | Bengkel Komponen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Bengkel Komponen</a>
+      <nav class="nav">
+        <a href="index.html#artikel">Artikel</a>
+        <a href="komponen.html">Komponen</a>
+        <a href="index.html#tentang">Tentang</a>
+      </nav>
+    </div>
+  </header>
+  <main class="article">
+    <div class="wrap article-layout">
+      <article>
+        <span class="eyebrow">Embedded system · 5 menit baca</span>
+        <h1>Mikrokontroler sebagai otak perangkat</h1>
+        <p class="article-intro">Embedded system adalah komputer khusus yang ditanam di dalam perangkat untuk menjalankan tugas tertentu secara konsisten dan efisien.</p>
+        <figure class="article-visual topology-image">
+          <img src="assets/embedded-topology.svg" alt="Diagram alur embedded system: input berupa sensor atau tombol diproses MCU lalu menghasilkan output seperti LED, motor, atau relay.">
+          <figcaption>Alur dasar embedded system: input diproses oleh MCU dan diteruskan ke output.</figcaption>
+        </figure>
+        <h2>Mikrokontroler vs komputer biasa</h2>
+        <p>Mikrokontroler menggabungkan prosesor, memori, dan pin input-output dalam satu chip. Ia tidak ditujukan untuk menjalankan banyak aplikasi, melainkan satu program yang terus mengawasi sensor dan mengendalikan perangkat.</p>
+        <p>Karena komponennya ringkas, mikrokontroler hemat energi, murah, dan cepat merespons. Arduino Uno cocok untuk belajar dasar, sedangkan ESP32 cocok ketika proyek membutuhkan Wi-Fi atau Bluetooth.</p>
+        <div class="callout"><b>Catatan tegangan:</b> GPIO ESP32 bekerja pada 3,3 V. Jangan memberikan 5 V langsung ke pin input tanpa pembagi tegangan atau level shifter.</div>
+        <h2>Contoh embedded system di sekitar kita</h2>
+        <p>Embedded system tidak hanya ada pada kit praktikum. Mesin cuci menggunakan pengendali untuk mengatur urutan pencucian, printer mengatur motor dan sensor posisi, sedangkan sistem pengereman kendaraan memproses data sensor dalam waktu sangat singkat. Perangkat-perangkat tersebut dirancang untuk fungsi tertentu sehingga stabilitas dan ketepatan respons lebih penting daripada menjalankan banyak aplikasi.</p>
+        <p>Pada proyek IoT, embedded system menjadi bagian yang berhadapan langsung dengan dunia fisik. ESP32, misalnya, membaca sensor, mengolah data, lalu mengirimkan hasilnya ke dashboard. Dengan demikian, IoT dapat dipahami sebagai pengembangan embedded system yang ditambah kemampuan komunikasi dan pengelolaan data.</p>
+        <h2>Input, proses, dan output</h2>
+        <p>Program embedded biasanya berjalan dalam loop: membaca input, mengolah kondisi, lalu mengubah output. Contohnya, jika nilai sensor cahaya lebih rendah dari batas, mikrokontroler menyalakan LED.</p>
+        <div class="tablewrap">
+          <table class="spec">
+            <tr><th>Input</th><td>Tombol, sensor suhu, sensor jarak</td></tr>
+            <tr><th>Proses</th><td>Program pada ATmega328P atau ESP32</td></tr>
+            <tr><th>Output</th><td>LED, buzzer, servo, relay</td></tr>
+            <tr><th>Bahasa</th><td>C/C++ Arduino atau MicroPython</td></tr>
+          </table>
+        </div>
+        <h2>Peran teknik komputer dalam pengembangan perangkat</h2>
+        <p>Teknik komputer menggabungkan pemahaman rangkaian digital, arsitektur komputer, pemrograman, dan jaringan. Saat membuat embedded system, seorang perancang perlu memilih sensor yang sesuai, menentukan cara membaca sinyal, menulis logika program, dan menguji apakah perangkat bekerja sesuai kebutuhan.</p>
+        <p>Selain fungsi utama, aspek nonfungsional juga penting. Program harus hemat memori dan energi, perangkat harus memiliki catu daya yang stabil, dan sistem perlu menangani kondisi gagal seperti sensor terlepas atau tegangan turun. Kebiasaan menguji dengan Serial Monitor, multimeter, dan dokumentasi rangkaian akan membantu menghasilkan prototipe yang dapat diandalkan.</p>
+        <h2>Cara memilih board</h2>
+        <p>Pilih Arduino Uno untuk latihan pin digital, analog, dan logika dasar. Pilih ESP32 jika proyek membutuhkan koneksi internet, banyak GPIO, atau performa lebih tinggi. Periksa juga kebutuhan tegangan, jumlah pin, dan konsumsi daya sebelum membeli.</p>
+        <h2>Dari prototipe menuju produk</h2>
+        <p>Setelah rangkaian berhasil, rapikan kabel, pisahkan catu daya beban dari catu daya logika jika diperlukan, dan buat kotak pelindung untuk perangkat. Dokumentasikan versi program, konfigurasi pin, serta hasil pengujian. Langkah-langkah kecil ini membuat proyek lebih mudah dirawat dan dikembangkan oleh orang lain.</p>
+        <div class="actions">
+          <a class="btn main" href="komponen.html">Lihat board dan sensor</a>
+          <a class="btn ghost" href="index.html">Kembali ke beranda</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <h3>Di artikel ini</h3>
+        <a href="#">Konsep embedded</a>
+        <a href="#">Input dan output</a>
+        <a href="komponen.html">Pilih board</a>
+        <h3 class="aside-heading">Artikel terkait</h3>
+        <a href="artikel-iot.html">Mengenal IoT</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer"><div class="wrap">Bengkel Komponen · Referensi embedded system</div></footer>
+</body>
+</html>

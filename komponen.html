@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katalog Komponen | Bengkel Komponen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Bengkel Komponen</a>
+      <nav class="nav">
+        <a href="index.html#artikel">Artikel</a>
+        <a href="komponen.html">Komponen</a>
+        <a href="index.html#tentang">Tentang</a>
+      </nav>
+    </div>
+  </header>
+  <main class="section">
+    <div class="wrap">
+      <span class="eyebrow">Katalog belajar</span>
+      <h1>Komponen untuk proyek IoT dan embedded</h1>
+      <p class="catalog-intro">Pilih komponen berdasarkan fungsi. Harga adalah perkiraan dan tombol beli membuka pencarian produk di Tokopedia.</p>
+      <div class="catalog-controls">
+        <div>
+          <label class="sr-only" for="search">Cari komponen</label>
+          <input class="search" id="search" type="search" placeholder="Cari ESP32, sensor, servo...">
+        </div>
+        <div>
+          <label class="sr-only" for="category">Filter kategori</label>
+          <select class="search" id="category">
+            <option value="Semua">Semua kategori</option>
+            <option value="Sensor">Sensor</option>
+            <option value="Mikrokontroler">Mikrokontroler</option>
+            <option value="Aktuator">Aktuator</option>
+            <option value="Komunikasi">Komunikasi</option>
+            <option value="Pendukung">Pendukung</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="catalog"></div>
+    </div>
+  </main>
+  <footer class="footer"><div class="wrap">Bengkel Komponen · Harga dapat berubah mengikuti toko</div></footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apa itu IoT? | Bengkel Komponen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Bengkel Komponen</a>
+      <nav class="nav">
+        <a href="index.html#artikel">Artikel</a>
+        <a href="komponen.html">Komponen</a>
+        <a href="index.html#tentang">Tentang</a>
+      </nav>
+    </div>
+  </header>
+  <main class="article">
+    <div class="wrap article-layout">
+      <article>
+        <span class="eyebrow">Internet of Things · 6 menit baca</span>
+        <h1>Apa itu IoT dan bagaimana aliran datanya?</h1>
+        <p class="article-intro">Internet of Things atau IoT adalah cara menghubungkan benda fisik ke jaringan agar benda tersebut dapat mengumpulkan, mengirim, dan menerima data.</p>
+        <figure class="article-visual topology-image">
+          <img src="assets/iot-topology.svg" alt="Diagram topologi IoT: device mengirim data melalui network menuju dashboard atau aktuator sebagai action.">
+          <figcaption>Topologi IoT: perangkat mengirim data melalui jaringan untuk menghasilkan informasi atau aksi.</figcaption>
+        </figure>
+        <h2>Empat bagian utama IoT</h2>
+        <p>Sebuah sistem IoT biasanya dimulai dari sensor. Sensor suhu, cahaya, kelembapan, atau jarak membaca kondisi di dunia nyata. Mikrokontroler kemudian mengolah hasil bacaan itu dan mengirimkannya melalui Wi-Fi atau jaringan lain.</p>
+        <p>Data dapat diteruskan ke server atau cloud untuk disimpan dan dianalisis. Dari sana, perintah dapat dikirim kembali ke perangkat. Aktuator seperti relay, servo, dan motor menjalankan perintah tersebut.</p>
+        <div class="callout"><b>Contoh sederhana:</b> sensor kelembapan membaca tanah kering, ESP32 mengirim data, program memeriksa batas kelembapan, lalu relay menyalakan pompa.</div>
+        <h2>Penerapan IoT dalam kehidupan sehari-hari</h2>
+        <p>IoT dapat ditemukan pada rumah, pertanian, industri, kesehatan, dan transportasi. Di rumah, lampu dan kipas dapat dikendalikan berdasarkan jadwal atau keberadaan pengguna. Di pertanian, sensor membantu memantau kelembapan tanah sehingga penyiraman dilakukan hanya ketika dibutuhkan. Pada industri, sensor getaran dan suhu dapat memberi peringatan sebelum mesin mengalami kerusakan.</p>
+        <p>Walaupun contoh produknya berbeda, pola kerjanya tetap serupa: perangkat mengumpulkan data, jaringan memindahkan data, sistem mengolahnya, lalu pengguna atau aktuator mengambil tindakan. Nilai IoT bukan hanya pada kemampuan terhubung ke internet, tetapi pada keputusan yang menjadi lebih cepat dan berdasarkan data.</p>
+        <h2>Hubungan IoT dengan teknik komputer</h2>
+        <p>Teknik komputer berperan dalam hampir setiap lapisan IoT. Pada sisi perangkat keras, mahasiswa mempelajari rangkaian sensor, catu daya, GPIO, dan komunikasi seperti I2C atau UART. Pada sisi perangkat lunak, mereka menulis program mikrokontroler, mengatur pertukaran data, dan membuat antarmuka pemantauan.</p>
+        <p>IoT juga mempertemukan sistem embedded, jaringan komputer, basis data, dan keamanan informasi. Karena itu, perancang tidak cukup hanya membuat sensor terbaca. Ia perlu memikirkan format data, kestabilan koneksi, autentikasi, pembaruan program, serta cara melindungi data pengguna.</p>
+        <h2>Alur kerja penyiram tanaman otomatis</h2>
+        <p>Untuk prototipe pertama, gunakan sensor kelembapan tanah, ESP32, modul relay, dan pompa kecil. Pastikan pompa memakai catu daya yang sesuai dan jangan menghubungkan beban besar langsung ke pin GPIO.</p>
+        <div class="tablewrap">
+          <table class="spec">
+            <tr><th>Input</th><td>Sensor kelembapan tanah</td></tr>
+            <tr><th>Pengolah</th><td>ESP32 atau Arduino Uno</td></tr>
+            <tr><th>Komunikasi</th><td>Wi-Fi, MQTT, atau HTTP</td></tr>
+            <tr><th>Output</th><td>Modul relay dan pompa air</td></tr>
+          </table>
+        </div>
+        <h2>Tahapan membuat prototipe IoT</h2>
+        <p>Mulai dengan merumuskan masalah dan menentukan data yang benar-benar diperlukan. Setelah itu, buat diagram blok yang menunjukkan sensor, mikrokontroler, jaringan, server, dan aktuator. Uji setiap bagian secara terpisah sebelum menggabungkannya agar sumber kesalahan lebih mudah ditemukan.</p>
+        <p>Ketika perangkat sudah berjalan, lakukan pengujian pada kondisi normal dan kondisi gangguan, misalnya Wi-Fi terputus atau sensor menghasilkan nilai tidak wajar. Tambahkan batas aman, pencatatan error, dan mode manual jika alat mengendalikan pompa, pemanas, atau beban listrik.</p>
+        <h2>Hal penting untuk pemula</h2>
+        <p>Mulailah dari jaringan lokal sebelum memakai cloud. Uji sensor di Serial Monitor, tampilkan data di dashboard sederhana, lalu tambahkan aktuator setelah pembacaan stabil. Dengan urutan ini, kesalahan lebih mudah dilacak.</p>
+        <div class="actions">
+          <a class="btn main" href="komponen.html">Cari komponen IoT</a>
+          <a class="btn ghost" href="index.html">Kembali ke beranda</a>
+        </div>
+      </article>
+      <aside class="aside">
+        <h3>Di artikel ini</h3>
+        <a href="#">Bagian IoT</a>
+        <a href="#">Alur data</a>
+        <a href="komponen.html">Komponen terkait</a>
+        <h3 class="aside-heading">Artikel lanjut</h3>
+        <a href="artikel-embedded-system.html">Mengenal embedded system</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer"><div class="wrap">Bengkel Komponen · Referensi belajar IoT</div></footer>
+</body>
+</html>
